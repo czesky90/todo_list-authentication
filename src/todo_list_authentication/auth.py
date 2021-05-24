@@ -2,8 +2,8 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, login_required, logout_user, current_user
 
-from .models import User
-from . import db
+from src.todo_list_authentication.models import User, db
+# from __init__ import db
 
 auth = Blueprint('auth', __name__)
 
